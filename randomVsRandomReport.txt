@@ -1,0 +1,49 @@
+RandomVSRandom Report
+
+1) What is your conclusion, does the first or
+second player have some advantage, at least for a random strategy?
+When it comes to 2 random robots playing Othello, often the second player will have
+an advantage versus the first player. This is due to the second player being able
+react to the initial move made by the first player. At most in these simulations
+of 2 random computers facing against each other, the distance between their respective
+winrates is at most 5%, meaning that being player 2 does not have a significant advantage
+over being the first player, but the difference is still noticeable even after a sample
+size of over 10000 simulations of the game.
+
+2) Watch https://www.youtube.com/watch?v=Iq9DzN6mvYA
+
+3) Briefly write your thoughts on the above video below:
+This video was very informative as a statistics and computer science student,
+as it showed me how connected these 2 fields are and how both fields benefit
+from having the expertise of the other one. The various recipes for hacking
+statistics was informative on how various methods of gathering data show
+how various factors can cause data to be misconstrued, altered, or generalized.
+
+4) H0 is the null hypothesis, which is a statement about a parameter.
+it can come in the form of ==, <=, or >=
+
+5) Ha is the alternate hypothesis, which is a statement that directly
+contradicts the null hypothesis, which comes in the form !=, >, or <
+
+6) Choose one of the following and delete the other:
+   My experimental results do not support H0, so they support Ha
+   my results support Ha, where if P(X) represents the probability
+   of player 1 winning and P(O) represents the probability of player
+   2 winning, then my alternative hypothesis would be P(X) < P(O). This is
+   because after running many tests, the second player would often
+   have a higher win rate and thus the probability would be higher.
+   But even though there is still a possibility that player 1 and 2 would
+   have an even win rate, the chances are incredibly unlikely,
+   causing the null hypothesis that they can be equal to be rejected
+
+
+7) As in the video, use either math or code (add a Java Class) to argue for or against H0
+    In a sample size of 100000 simulated games between two computers that
+    execute random moves, the win rate of P1 denoted by P(X) and P2 denoted
+    by P(O) was 0.45543% and 0.50241% respectively. If we want to estimate the chances
+    that P1 and P2 get the same number of wins or more, we can simulate games over a
+    large sample space and calculate the probability. the method of how i calculated this
+    and the code is in the class RandomReport
+
+References: 
+https://www.thoughtco.com/null-hypothesis-vs-alternative-hypothesis-3126413
